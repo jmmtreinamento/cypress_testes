@@ -11,6 +11,18 @@ describe('PNLD', () => {
 
 
     it('deve navegar nos menus superiores do sistema', () => {
-        cy.wait(1000);
+        cy.get('[href="/appeals"]').click();
+        cy.wait(1500);
+        cy.get('[href="/users-list"]').click();
+        cy.wait(1500);
+        cy.get('[href="/publisher-request"]').click();
+        cy.wait(1500);
+        cy.get('[href="/alert"]').click();
+        cy.wait(1500);
+        cy.get('.MuiButtonBase-root > .MuiTypography-root').click();
+        cy.wait(900);
+        cy.get('.MuiList-root > [tabindex="-1"]').click();
+        cy.wait(1500);
+        cy.get('[href="/settings/static-fields"]').click();        
     });
 });
