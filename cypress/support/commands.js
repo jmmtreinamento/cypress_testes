@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+<<<<<<< HEAD
 
 Cypress.Commands.add("createOng", () => {
     cy.request({
@@ -42,3 +43,5 @@ Cypress.Commands.add("createOng", () => {
         Cypress.env('createdOngId', response.body.id);
     });
 })
+=======
+>>>>>>> 6a8443b7373c511ae50d9ec492885ca493f7653f
